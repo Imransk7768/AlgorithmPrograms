@@ -8,7 +8,7 @@ namespace AlgorithmPrograms
         {
             Console.WriteLine(">>>>  Welcome to Algorithm Programs  <<<<");
             bool end = true;
-            Console.WriteLine("1. Binary Search\n2. InsertionSort\n3. Bubble Sort\n4. Merge SOrt\n   Otherthan Above Option(s) Program Ends");
+            Console.WriteLine("1. Binary Search\n2. InsertionSort\n3. Bubble Sort\n4. Merge Sort\n5. Anagram Detection\n   Otherthan Above Option(s) Program Ends");
             while (end == true)
             {
                 Console.Write("Take an option to execute : ");
@@ -38,6 +38,14 @@ namespace AlgorithmPrograms
                         merge.Sorting(arr2, 0, arr2.Length - 1);
                         Console.Write("Sorted array : ");
                         merge.PrintArray(arr2);
+                        break;
+                    case 5:
+                        AnagramDetection anagram = new AnagramDetection();
+                        string s1 = "below ";
+                        string s2 = "elbow";
+                        Console.WriteLine(anagram.Anagram(s1, s2));
+                        Console.WriteLine("Method2");
+                        anagram.IsAnagram();
                         break;
                     default:
                         end = false;
