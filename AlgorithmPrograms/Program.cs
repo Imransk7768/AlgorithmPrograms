@@ -8,7 +8,7 @@ namespace AlgorithmPrograms
         {
             Console.WriteLine(">>>>  Welcome to Algorithm Programs  <<<<");
             bool end = true;
-            Console.WriteLine("1. Binary Search\n2. InsertionSort\n   Otherthan Above Option(s) Program Ends");
+            Console.WriteLine("1. Binary Search\n2. InsertionSort\n3. Bubble Sort\n   Otherthan Above Option(s) Program Ends");
             while (end == true)
             {
                 Console.Write("Take an option to execute : ");
@@ -25,6 +25,10 @@ namespace AlgorithmPrograms
                         string word = File.ReadAllText(filePath);
                         string[] names = word.Split(',');
                         sort.Insertion(names);
+                        break;
+                    case 3:
+                        BubbleSort bubble = new BubbleSort();
+                        bubble.BubbleSorting();
                         break;
                     default:
                         end = false;
