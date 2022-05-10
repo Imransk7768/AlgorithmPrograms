@@ -17,15 +17,15 @@ namespace AlgorithmPrograms
             {
                 Console.Write(arr[index] + " ");
             }
-            for (int write = 0; write < arr.Length; write++)
+            for (int ind = 0; ind < arr.Length; ind++)
             {
-                for (int sort = 0; sort < arr.Length - 1; sort++)
+                for (int k = 0; k < arr.Length - 1; k++)
                 {
-                    if (arr[sort] > arr[sort + 1])
+                    if (arr[k] > arr[k + 1])
                     {
-                        temp = arr[sort + 1];
-                        arr[sort + 1] = arr[sort];
-                        arr[sort] = temp;
+                        temp = arr[k + 1];
+                        arr[k + 1] = arr[k];
+                        arr[k] = temp;
                     }
                 }
             }
