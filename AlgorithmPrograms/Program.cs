@@ -9,7 +9,7 @@ namespace AlgorithmPrograms
             Console.WriteLine(">>>>  Welcome to Algorithm Programs  <<<<");
             bool end = true;
             Console.WriteLine("1. Binary Search\n2. InsertionSort\n3. Bubble Sort\n4. Merge Sort\n5. Anagram Detection\n6. Prime Number\n" +
-                "7. PalindromePrime\n8. Generic Sorting\n   Otherthan Above Option(s) Program Ends");
+                "7. PalindromePrime\n8. Generic Sorting\n9. Find Number\n   Otherthan Above Option(s) Program Ends");
             while (end == true)
             {
                 Console.Write("Take an option to execute : ");
@@ -74,6 +74,11 @@ namespace AlgorithmPrograms
                         generics.InsertionSort<int>(intt);
                         generics.InsertionSort<float>(flt);
                         generics.InsertionSort<string>(stg);
+                        break;
+                    case 9:
+                        FindNumber find = new FindNumber();
+                        Console.WriteLine("Guess No between 0 to 160 ");
+                        Console.WriteLine("Guess No is " + find.NumberFind());
                         break;
                     default:
                         end = false;
