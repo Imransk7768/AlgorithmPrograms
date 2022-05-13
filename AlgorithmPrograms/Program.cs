@@ -8,7 +8,8 @@ namespace AlgorithmPrograms
         {
             Console.WriteLine(">>>>  Welcome to Algorithm Programs  <<<<");
             bool end = true;
-            Console.WriteLine("1. Binary Search\n2. InsertionSort\n3. Bubble Sort\n4. Merge Sort\n5. Anagram Detection\n6. Prime Number\n7. PalindromePrime\n   Otherthan Above Option(s) Program Ends");
+            Console.WriteLine("1. Binary Search\n2. InsertionSort\n3. Bubble Sort\n4. Merge Sort\n5. Anagram Detection\n6. Prime Number\n" +
+                "7. PalindromePrime\n8. Generic Sorting\n   Otherthan Above Option(s) Program Ends");
             while (end == true)
             {
                 Console.Write("Take an option to execute : ");
@@ -58,6 +59,21 @@ namespace AlgorithmPrograms
                         Console.WriteLine("Enter Maximum Value");
                         int num2 = Convert.ToInt32(Console.ReadLine());
                         pprime.Palindrome(num1, num2);
+                        break;
+                    case 8:
+                        GenericsSorting generics = new GenericsSorting();
+                        int[] intt = { 22, 12, 15, 7, 6, 5 };
+                        float[] flt = { 93.7f, 26.5f, 2.4f, 19.4f, 3.6f };
+                        string[] stg = { "Rehan", "Shaik", "Andhra", "India" };
+                        generics.SelectionSort<int>(intt);
+                        generics.SelectionSort<float>(flt);
+                        generics.SelectionSort<string>(stg);
+                        generics.BubbleSort<int>(intt);
+                        generics.BubbleSort<float>(flt);
+                        generics.BubbleSort<string>(stg);
+                        generics.InsertionSort<int>(intt);
+                        generics.InsertionSort<float>(flt);
+                        generics.InsertionSort<string>(stg);
                         break;
                     default:
                         end = false;
