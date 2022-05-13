@@ -8,7 +8,7 @@ namespace AlgorithmPrograms
         {
             Console.WriteLine(">>>>  Welcome to Algorithm Programs  <<<<");
             bool end = true;
-            Console.WriteLine("1. Binary Search\n2. InsertionSort\n3. Bubble Sort\n4. Merge Sort\n5. Anagram Detection\n6. Prime Number\n   Otherthan Above Option(s) Program Ends");
+            Console.WriteLine("1. Binary Search\n2. InsertionSort\n3. Bubble Sort\n4. Merge Sort\n5. Anagram Detection\n6. Prime Number\n7. PalindromePrime\n   Otherthan Above Option(s) Program Ends");
             while (end == true)
             {
                 Console.Write("Take an option to execute : ");
@@ -50,6 +50,14 @@ namespace AlgorithmPrograms
                     case 6:
                         PrimeNo prime = new PrimeNo();
                         prime.IsPrime();
+                        break;
+                    case 7:
+                        PrimePalindrome pprime = new PrimePalindrome();
+                        Console.WriteLine("Enter Initial Value");
+                        int num1 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter Maximum Value");
+                        int num2 = Convert.ToInt32(Console.ReadLine());
+                        pprime.Palindrome(num1, num2);
                         break;
                     default:
                         end = false;
