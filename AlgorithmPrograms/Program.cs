@@ -8,7 +8,7 @@ namespace AlgorithmPrograms
         {
             Console.WriteLine(">>>>  Welcome to Algorithm Programs  <<<<");
             bool end = true;
-            Console.WriteLine("1. Binary Search\n2. InsertionSort\n3. Bubble Sort\n4. Merge Sort\n5. Anagram Detection\n   Otherthan Above Option(s) Program Ends");
+            Console.WriteLine("1. Binary Search\n2. InsertionSort\n3. Bubble Sort\n4. Merge Sort\n5. Anagram Detection\n6. Prime Number\n   Otherthan Above Option(s) Program Ends");
             while (end == true)
             {
                 Console.Write("Take an option to execute : ");
@@ -46,6 +46,10 @@ namespace AlgorithmPrograms
                         Console.WriteLine(anagram.Anagram(s1, s2));
                         Console.WriteLine("Method2");
                         anagram.IsAnagram();
+                        break;
+                    case 6:
+                        PrimeNo prime = new PrimeNo();
+                        prime.IsPrime();
                         break;
                     default:
                         end = false;
