@@ -45,7 +45,7 @@ namespace AlgorithmPrograms
                         string s1 = "below ";
                         string s2 = "elbow";
                         Console.WriteLine(anagram.Anagram(s1, s2));
-                        Console.WriteLine("Method2");
+                        Console.WriteLine("Two");
                         anagram.IsAnagram();
                         break;
                     case 6:

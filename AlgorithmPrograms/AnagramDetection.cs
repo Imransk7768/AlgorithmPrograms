@@ -14,9 +14,9 @@ namespace AlgorithmPrograms
             var lnt2 = length2.ToLower().ToArray();
             Array.Sort(lnt1);
             Array.Sort(lnt2);
-            return new string(lnt1) == new string(lnt2);
             string val1 = new string(lnt1);
             string val2 = new string(lnt2);
+            return new string(lnt1) == new string(lnt2);
         }
         public void IsAnagram()
         {
@@ -30,7 +30,7 @@ namespace AlgorithmPrograms
             string val2 = new string(ch2);
             if (val1 == val2)
             {
-                Console.WriteLine("GIven Words are Anagrams");
+                Console.WriteLine("Given Words are Anagrams");
             }
             else
             {
